@@ -51,4 +51,5 @@ int main(){
     printf("\nHarga akhir                           : Rp.%u\n\n", HargaAkhir);
     puts("=========================================");
     printf("\n\nTerima kasih sudah berbelanja :)");
+    return 0;
 }
