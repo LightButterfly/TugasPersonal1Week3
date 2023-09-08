@@ -22,13 +22,13 @@ int main(){
 
         HargaAsli = HargaAsli + TotalMasuk;
 
-    if(TotalMasuk > 200000 && TotalMasuk <= 500000){
+    if(TotalMasuk >= 200000 && TotalMasuk < 500000){
         DiskonBelanja = DiskonBelanja + TotalMasuk * 0.1;
         TotalMasuk = TotalMasuk * 0.9;
-    } else if (TotalMasuk > 500000 && TotalMasuk <= 1000000){
+    } else if (TotalMasuk >= 500000 && TotalMasuk < 1000000){
         DiskonBelanja = DiskonBelanja + TotalMasuk * 0.2;
         TotalMasuk = TotalMasuk * 0.8;
-    } else if (TotalMasuk > 1000000){
+    } else if (TotalMasuk >= 1000000){
         DiskonBelanja = DiskonBelanja + TotalMasuk * 0.3;
         TotalMasuk = TotalMasuk * 0.7;
     }
@@ -51,5 +51,6 @@ int main(){
     printf("\nHarga akhir                           : Rp.%u\n\n", HargaAkhir);
     puts("=========================================");
     printf("\n\nTerima kasih sudah berbelanja :)");
-    return 0;
+    
+return 0;
 }
